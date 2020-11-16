@@ -18,7 +18,7 @@ get_header(); ?>
 					<p>hello</p>
 				</div>
 
-				<img src="themes/cjmedia/build/assets/images/ChelseaJadeMedia-logo.svg">
+			
 
 			<?php endwhile; // End of the loop. ?>
 

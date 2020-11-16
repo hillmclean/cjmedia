@@ -671,8 +671,9 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .front-logo {
-  background-image: url(../assets/images/ChelseaJadeMedia-logo.svg);
+  background-image: url(../assets/logos/ChelseaJadeMedia-logo.png);
   background-size: cover;
   background-position: right;
-  width: 100%;
+  width: 200px;
+  height: 200px;
   z-index: 2; }
