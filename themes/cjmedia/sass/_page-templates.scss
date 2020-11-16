@@ -3,3 +3,13 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.front-logo {
+    background-image: url(../assets/images/ChelseaJadeMedia-logo.svg);
+			background-size: cover;
+			background-position: right;
+			// grid-column: 2 / 4;
+			// grid-row: 1 / 4;
+			width: 100%;
+			z-index: 2;
+}

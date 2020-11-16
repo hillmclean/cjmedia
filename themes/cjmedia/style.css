@@ -1,9 +1,9 @@
 /*!
-Theme Name: Chelsea Jade Media
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Hillary McLean
-Author URI: http://www.hilldmc.com
-Description: A WordPress theme made specially for Chelsea Jade Media
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-This theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -670,3 +670,9 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-logo {
+  background-image: url(../assets/images/ChelseaJadeMedia-logo.svg);
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  z-index: 2; }

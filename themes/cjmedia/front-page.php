@@ -14,10 +14,16 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
+				<div class="front-logo">
+					<p>hello</p>
+				</div>
+
+				<img src="themes/cjmedia/build/assets/images/ChelseaJadeMedia-logo.svg">
+
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
