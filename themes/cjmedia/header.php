@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Chelsea_Jade_Media_Theme
  */
 
 ?><!DOCTYPE html>

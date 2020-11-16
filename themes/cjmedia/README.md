@@ -1,6 +1,6 @@
-# RED Starter
+# Chelsea Jade Media
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A custom WordPress theme made specially for Chelsea Jade Media, forked from Underscores.
 
 ## Installation
 

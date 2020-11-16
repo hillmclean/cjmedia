@@ -2,7 +2,7 @@
 /**
  * Template part for displaying posts.
  *
- * @package RED_Starter_Theme
+ * @package Chelsea_Jade_Media_Theme
  */
 
 ?>
