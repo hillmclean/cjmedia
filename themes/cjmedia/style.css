@@ -670,10 +670,20 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.front-logo {
-  background-image: url(../assets/logos/ChelseaJadeMedia-logo.png);
-  background-size: cover;
-  background-position: right;
-  width: 200px;
-  height: 200px;
-  z-index: 2; }
+.front-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50vh 7vh 7vh 7vh;
+  grid-gap: 0;
+  justify-self: center;
+  padding-top: 7rem;
+  padding-bottom: 2.5rem;
+  width: 90%;
+  margin: 0 auto; }
+  .front-grid .front-logo {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-image: url(../assets/logos/ChelseaJadeMedia-logo.png);
+    background-size: cover;
+    width: 100%; }
