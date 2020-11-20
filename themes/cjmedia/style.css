@@ -670,6 +670,13 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-info {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  z-index: 2;
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
 .front-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
