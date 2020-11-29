@@ -25,29 +25,26 @@ get_header(); ?>
 					<div class="front-logo"></div>
 				</div>
 
-			<?php 
-			if(have_rows('home_boxes_repeater')):
+		<?php if(have_rows('home_boxes_repeater')):
 				while(have_rows('home_boxes_repeater')): the_row();
+
 				$sub_value = get_sub_field('box_title');
-			echo $sub_value;
-			endwhile;
-		endif;
-		?>
+				echo $sub_value;
+				endwhile;
+		endif; ?>
+
+		<?php if(have_rows('home_boxes_repeater')): ?> 
+			<?php while(have_rows('home_boxes_repeater')): the_row(); ?>
+			<?php if( get_sub_field('box_background_image') ): ?>
+			<div class="box-image" style="background: url(<?php  echo the_sub_field('box_background_image'); ?>); background-size: cover; background-position: center;">
+			<h5 class="founder-name"><div class="founder1-nameline" ></div><?php the_sub_field('box_title'); ?></h5>
+
+		</div> 
+			<?php endif; ?>
+			<?php endwhile; ?>	
+		<?php endif; ?>
 
 
-
-
-
-
-				<?php if(get_field('home_boxes_repeater')): ?>
-
-						<?php while(has_sub_field('box_title')): ?>
-
-								<div class="box-background-image" style="background: url(<?php  echo the_sub_field('box_background_image'); ?>); background-size: cover; background-position: center;"></div> 
-
-						<?php endwhile; ?>
-
-						<?php endif; ?>
 
 						
 

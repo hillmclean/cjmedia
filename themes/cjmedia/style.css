@@ -694,3 +694,7 @@ object {
     background-image: url(../assets/logos/ChelseaJadeMedia-logo.png);
     background-size: cover;
     width: 100%; }
+
+.box-image {
+  width: 8rem;
+  height: 6rem; }
