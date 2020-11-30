@@ -26,9 +26,11 @@ get_header(); ?>
 				<?php if(have_rows('home_boxes_repeater')): ?> 
 					<?php while(have_rows('home_boxes_repeater')): the_row(); ?>
 					<?php if( get_sub_field('box_background_image') ): ?>
+						<a href="<?php the_sub_field('box_link'); ?>">
 						<div class="box-image" style="background: url(<?php  echo the_sub_field('box_background_image'); ?>); background-size: cover; background-position: center;">
 							<h2 class="founder-name"><div class="founder1-nameline" ></div><?php the_sub_field('box_title'); ?></h2>
 						</div> 
+						</a>
 					<?php endif; ?>
 					<?php endwhile; ?>	
 				<?php endif; ?>
