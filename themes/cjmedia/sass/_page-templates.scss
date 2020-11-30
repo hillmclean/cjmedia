@@ -18,29 +18,15 @@
 }
 
 .front-grid {
-    display: grid;
-	grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50vh 7vh 7vh 7vh;
-    grid-gap: 0;
-	justify-self: center;
-	padding-top: 7rem;
-	padding-bottom: 2.5rem;
-	width: 90%;
-	margin: 0 auto;
-    // position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        padding: 0px;
+        margin-bottom: 2rem;
 
+        .box-image {
+            width: 8rem;
+            height: 6rem;
+          }
 
-    .front-logo {
-    display: grid;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    background-image: url(../assets/logos/ChelseaJadeMedia-logo.png);
-    background-size: cover;
-    width: 100%;
-    }
 }
-
-.box-image {
-    width: 8rem;
-    height: 6rem;
-  }
