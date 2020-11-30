@@ -29,7 +29,7 @@ get_header(); ?>
 						<div class="box-container">
 						<a href="<?php the_sub_field('box_link'); ?>">
 						<div class="box-image" style="background: url(<?php  echo the_sub_field('box_background_image'); ?>); background-size: cover; background-position: center;">
-							<h2 class="founder-name"><div class="founder1-nameline" ></div><?php the_sub_field('box_title'); ?></h2>
+							<h2 class="box-title"><?php the_sub_field('box_title'); ?></h2>
 						</div> 
 						</a>
 					</div>

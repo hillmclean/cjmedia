@@ -698,6 +698,17 @@ object {
     grid-column: span 2;
     justify-self: center; }
   .front-grid .box-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 20rem;
     width: 20rem;
-    justify-self: center; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .front-grid .box-title {
+    text-align: center;
+    margin: 0; }
