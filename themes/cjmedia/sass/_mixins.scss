@@ -10,3 +10,23 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+// Media Queries 
+
+@mixin desktop {
+	@media screen and (min-width: $desktop) {
+	  @content;
+	}
+  }
+  
+  @mixin tablet {
+	@media screen and (min-width: $tablet) {
+	  @content;
+	}
+  }
+  
+  @mixin iphone {
+	  @media screen and (min-width: $iphone) {
+		@content;
+	  }
+	}

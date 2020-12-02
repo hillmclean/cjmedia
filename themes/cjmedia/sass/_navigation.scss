@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+html {
+	scroll-behavior: smooth;
+  }
 
 /* Links */
 
@@ -61,14 +64,6 @@ a {
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
 
 		li:hover > ul,
@@ -80,9 +75,6 @@ a {
 		float: left;
 		position: relative;
 
-		&:hover > a,
-		&.focus > a {
-		}
 	}
 	a {
 		display: block;

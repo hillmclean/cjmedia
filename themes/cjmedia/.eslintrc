@@ -13,12 +13,19 @@
     "no-eq-null": 0,
     "guard-for-in": 1,
     "no-empty": 1,
-    "quotes": [1, "single"]
+    "no-mixed-spaces-and-tabs": 0,
+    "quotes": [
+      1,
+      "single"
+    ]
   },
   "globals": {
     "jQuery": false,
     "$": false,
-    "_": false
+    "_": false,
+    "Flickity": false,
+    "projectsListVolunteer": false,
+    "homeUrl": false
   },
   "env": {
     "es6": true,

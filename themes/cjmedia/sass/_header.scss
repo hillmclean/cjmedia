@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     z-index: 999;
-    background-color: $color__background-white;
+    background-color: white;
     top: 0;
     @include desktop {
 	display: flex;
@@ -54,18 +54,18 @@
 	    transition-property: all;
 	    transition-duration: .1s;
 		margin: 1.4rem;
-		font-family: $font__main;
+		// font-family: $font__main;
 	    @include desktop {
 		margin: 1.4rem;
 	    }
 	    text-transform: uppercase;
-	    color: $color__text-main;
+	    // color: $color__text-main;
 	    border-bottom: solid transparent .15rem;
 	    @include desktop {
 		padding-bottom: .2rem;
 		&:active,
 		&:hover {
-		    border-bottom: solid $color__green-1 .15rem;
+		    border-bottom: solid green .15rem;
 		}
 	    }
 	}
@@ -73,8 +73,8 @@
 	    display: flex;
 	    justify-content: flex-end;
 	    &:last-child > a {
-		border: solid $color__green-1 .15rem;
-		color: $color__green-1;
+		border: solid green .15rem;
+		color: solid green .15rem;
 		font-weight: 900;
 		width: auto;
 		padding: .4rem 2rem;
@@ -91,7 +91,7 @@
 	display: block;
 	width: 100vw;
 	right: 0;
-	background-color: $color__background-white;
+	// background-color: $color__background-white;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
