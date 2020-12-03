@@ -20,13 +20,14 @@
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
+
 			<header id="masthead" class="site-header" role="banner">
-	
 			<div class="site-branding">
 				<a href="<?php echo get_home_url() ?>">
 				    <img src="<?php echo get_template_directory_uri() . "/build/assets/logos/ChelseaJadeMedia-logo.svg"?>"></img>
 				</a>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					
 					<p class="site-description screen-reader-text"><?php bloginfo( 'description' ); ?></p>
 				<div class="hamburger hamburger--collapse">
 				    <span class="hamburger-box">
