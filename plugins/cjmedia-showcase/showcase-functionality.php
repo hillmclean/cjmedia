@@ -1,14 +1,14 @@
 <?php
  /**
  *
- * @package   Chelsea Jade Media Functionality
+ * @package   Showcase Functionality
  * @author    Hillary McLean <hilldmc@gmail.com>
  * @license   GPL-2.0+
  * @copyright 2020 Hillary McLean
  *
  * @wordpress-plugin
- * Plugin Name: Chelsea Jade Media  Functionality
- * Description: This plugin is for the functionality of Chelsea Jade Media
+ * Plugin Name: Showcase Functionality
+ * Description: This plugin is for the functionality of Showcase posts
  * Version:     1.0.0
  * Author:      Hillary McLean
  * License:     GPL-2.0+
@@ -25,14 +25,14 @@ if ( ! defined( 'WPINC' ) ) {
  *
  * @since 1.0.0
  */
-define( 'CJM_DIR', dirname( __FILE__ ) );
+define( 'CJM_SC', dirname( __FILE__ ) );
 
 /**
  * General housekeeping and plugin activation tasks
  *
  * @since 1.0.0
  */
-include_once( CJM_DIR . '/lib/functions/general.php' );
+include_once( CJM_SC . '/lib/functions/general.php' );
 register_activation_hook( __FILE__, array( 'CJM_General', 'plugin_activation' ) );
 
 /**
@@ -40,11 +40,11 @@ register_activation_hook( __FILE__, array( 'CJM_General', 'plugin_activation' ) 
  *
  * @since 1.0.0
  */
-include_once( CJM_DIR . '/lib/functions/post-types.php' );
+include_once( CJM_SC . '/lib/functions/post-types.php' );
 
 /**
  * Taxonomies
  *
  * @since 1.0.0
  */
-include_once( CJM_DIR . '/lib/functions/taxonomies.php' );
+include_once( CJM_SC . '/lib/functions/taxonomies.php' );

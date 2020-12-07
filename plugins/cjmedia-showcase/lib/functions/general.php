@@ -4,7 +4,7 @@
  *
  */
 
-class CJM_General {
+class CJM_showcase {
 
    /**
     * Add actions and filters
@@ -140,4 +140,4 @@ class CJM_General {
 
 }
 
-new CJM_General();
+new CJM_showcase();
