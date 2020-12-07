@@ -33,7 +33,7 @@ define( 'CJM_SC', dirname( __FILE__ ) );
  * @since 1.0.0
  */
 include_once( CJM_SC . '/lib/functions/general.php' );
-register_activation_hook( __FILE__, array( 'CJM_General', 'plugin_activation' ) );
+register_activation_hook( __FILE__, array( 'CJM_showcase', 'plugin_activation' ) );
 
 /**
  * Post types
