@@ -17,6 +17,10 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+			<div class="site-info">
+				<p class="site-title-heading"><?php the_field('body_p'); ?></p>	
+			</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
