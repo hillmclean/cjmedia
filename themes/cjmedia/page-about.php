@@ -17,6 +17,8 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+			<div class="top-image" style="background: url(<?php  echo the_field('top_image'); ?>); background-size: cover; background-position: center;"></div>
+
 			<div class="site-info">
 				<p class="site-title-heading"><?php the_field('body_p'); ?></p>	
 			</div>
