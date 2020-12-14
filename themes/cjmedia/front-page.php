@@ -11,12 +11,6 @@ get_template_part( 'template-parts/header', 'page-front' ); ?>
 		<main id="main" class="site-main" role="main">
 		<div class="site-info">
 			<h1 class="site-title-heading"><?php the_field('site_name'); ?></h1>
-			<div class="tagline-box">
-				<p class="site-info-tagline"><?php the_field('site_tagline'); ?></p>
-			</div>
-			<div class="tagline-box">
-				<p class="site-info-tagline"><?php the_field('site_tagline'); ?></p>
-			</div>
 
 			<div class="front-grid">
 
