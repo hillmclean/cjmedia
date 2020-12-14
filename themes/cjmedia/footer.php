@@ -10,9 +10,8 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-
-				</div><!-- .site-info -->
+				<div class="footer-box">
+				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" rel="contact">Contact</a>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

@@ -235,7 +235,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -673,17 +673,20 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.site-info {
+.front-info {
   padding: 0.5rem 0rem 0.5rem 0rem;
   z-index: 2;
   width: 100%;
   -ms-flex-item-align: center;
       align-self: center; }
 
+.site-title-heading {
+  text-align: center; }
+
 .front-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   padding: 0px;
   width: 90%;
   margin: 0 auto;
@@ -691,10 +694,13 @@ object {
       -ms-flex-align: center;
           align-items: center; }
   .front-grid .front-logo {
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
     grid-column: span 2;
-    justify-self: center; }
+    justify-self: center;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .front-grid .box-container {
     height: 20rem;
     width: 20rem;
