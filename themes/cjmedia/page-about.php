@@ -23,6 +23,10 @@ get_header(); ?>
 				<p class="site-title-heading"><?php the_field('body_p'); ?></p>	
 			</div>
 
+			<div class="top-image" style="background: url(<?php  echo the_field('middle_image'); ?>); background-size: cover; background-position: center;"></div>
+
+			<div class="top-image" style="background: url(<?php  echo the_field('bottom_image'); ?>); background-size: cover; background-position: center;"></div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
