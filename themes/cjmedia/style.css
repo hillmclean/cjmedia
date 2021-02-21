@@ -241,7 +241,14 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  clear: both; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
   clear: both; }
 
 /* Copy */

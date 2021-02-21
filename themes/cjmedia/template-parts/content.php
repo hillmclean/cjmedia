@@ -13,7 +13,7 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php the_title(); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -23,6 +23,12 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_excerpt(); ?>
+		<?php the_content(); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+				'after'  => '</div>',
+			) );
+		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

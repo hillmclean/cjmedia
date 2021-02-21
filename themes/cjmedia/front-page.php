@@ -11,7 +11,7 @@ get_template_part( 'template-parts/header', 'page-front' ); ?>
 		<main id="main" class="site-main" role="main">
 			
 		<div class="front-info">
-			<h1 class="site-title-heading"><?php the_field('site_name'); ?></h1>
+			<h1 class="site-title-heading">Chelsea Jade</br><span class=site-title-heading-2>Media</span></h1>
 
 			<div class="front-grid">
 
