@@ -721,6 +721,14 @@ object {
 .box-container {
   height: 15rem;
   width: 15rem; }
+  .box-container a {
+    text-align: center;
+    margin: 0;
+    color: white;
+    letter-spacing: 3px;
+    text-decoration: none; }
+    .box-container a .box-title {
+      font-weight: 500; }
 
 .box-image {
   display: -webkit-box;
@@ -735,10 +743,6 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 100%; }
-
-.box-title {
-  text-align: center;
-  margin: 0; }
 
 /* About  page */
 .top-image {
@@ -928,4 +932,8 @@ object {
     background: #3C549E;
     padding: 1rem 5rem;
     border-radius: 27px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px; }
