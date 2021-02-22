@@ -576,6 +576,13 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.social-icons {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  margin: 0rem;
+  font-size: 2.813rem;
+  list-style: none; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -718,7 +725,11 @@ object {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 80vh; }
 
 .box-container {
   height: 15rem;

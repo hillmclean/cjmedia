@@ -32,7 +32,7 @@ get_template_part( 'template-parts/header', 'page-front' ); ?>
 					<?php endwhile; ?>	
 				<?php endif; ?>
 
-					</div>
+					</div> <!--#front-img-flex-box--> 
 
 		</div><!-- #front-info -->		
 

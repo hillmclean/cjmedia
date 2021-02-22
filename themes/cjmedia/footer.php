@@ -10,8 +10,18 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="footer-box">
-				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" rel="contact">Contact</a>
+
+			<?php	
+							if ( ! is_active_sidebar( 'footer' ) ) {
+								return;
+								} ?>
+
+						<div id="secondary" class="widget-area-footer" role="complementary">
+							<?php dynamic_sidebar( 'footer' ); ?>
+						</div>
+
+						<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" rel="contact">Contact</a>
+
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

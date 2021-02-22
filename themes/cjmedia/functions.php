@@ -57,7 +57,7 @@ add_action( 'after_setup_theme', 'cjmedia_content_width', 0 );
 function cjmedia_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html( 'Footer' ),
-		'id'            => 'sidebar-1',
+		'id'            => 'footer',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
