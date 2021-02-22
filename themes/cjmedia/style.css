@@ -826,7 +826,10 @@ object {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
-                flex-direction: row; } }
+                flex-direction: row;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
     .site-header .menu a {
       right: -100vw;
       -webkit-transition-timing-function: ease-in-out;
@@ -836,6 +839,7 @@ object {
       -webkit-transition-duration: .1s;
               transition-duration: .1s;
       margin: 1.4rem;
+      color: #333569;
       text-transform: uppercase;
       border-bottom: solid transparent .15rem; }
       @media screen and (min-width: 1080px) {
@@ -854,11 +858,12 @@ object {
           -ms-flex-pack: end;
               justify-content: flex-end; }
       .site-header .menu li:last-child > a {
-        border: solid green .15rem;
-        color: solid green .15rem;
-        font-weight: 900;
+        background: #3C549E;
+        padding: 1rem 5rem;
+        border-radius: 27px;
+        color: white;
+        letter-spacing: 3px;
         width: auto;
-        padding: .4rem 2rem;
         text-align: center; }
         @media screen and (min-width: 1080px) {
           .site-header .menu li:last-child > a {

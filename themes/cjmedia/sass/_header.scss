@@ -4,33 +4,37 @@
     z-index: 999;
     background-color: white;
     top: 0;
-    @include desktop {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-    }
+		@include desktop {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		}
+
     .site-branding {
 	display: flex;
 	align-items: center;
 	padding: 1rem 1.4rem;   
 	width: 100%;
 	justify-content: space-between;
-	.hamburger {
-	    @include desktop {
-		display: none;
-	    }
-	}
+	
+		.hamburger {
+			@include desktop {
+			display: none;
+			}
+		}
     }
     //position: relative;
     img {
 	height: 2.8rem;
     }
+
     .menu-menu-container {
 	width:100vw;
-	@include desktop {
-	    width: auto;
-	}
+		@include desktop {
+			width: auto;
+		}
     }
+
     .menu {
 	display: flex;
 	flex-direction: column;
@@ -40,13 +44,14 @@
 	transition-timing-function: ease-in-out;
 	transition-property: all;
 	transition-duration: .8s;
-	@include desktop {
-	    width: auto;
-	    display: flex;
-	    position: relative;
-	    right: auto;
-	    flex-direction: row;
-	}
+		@include desktop {
+			width: auto;
+			display: flex;
+			position: relative;
+			right: auto;
+			flex-direction: row;
+			justify-content: flex-end;
+		}
 	text-align: right;
 	a {
 	    right: -100vw;
@@ -54,7 +59,7 @@
 	    transition-property: all;
 	    transition-duration: .1s;
 		margin: 1.4rem;
-		// font-family: $font__main;
+		color: #333569;
 	    @include desktop {
 		margin: 1.4rem;
 	    }
@@ -73,11 +78,12 @@
 	    display: flex;
 	    justify-content: flex-end;
 	    &:last-child > a {
-		border: solid green .15rem;
-		color: solid green .15rem;
-		font-weight: 900;
+		background: #3C549E;
+		padding: 1rem 5rem;
+		border-radius: 27px;
+		color: white;
+		letter-spacing: 3px;
 		width: auto;
-		padding: .4rem 2rem;
 		text-align: center;
 		@include desktop {
 		    margin: .7rem; 
