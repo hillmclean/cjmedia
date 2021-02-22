@@ -9,23 +9,33 @@ get_header(); ?>
 
 
 <div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main-about" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+		<div class="site-title-heading">
+			<h1><?php the_field('body_p'); ?></h1>	
+		</div>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+		<div class="about-grid">
+			<div class="image-1" style="background: url(<?php  echo the_field('image_1'); ?>); background-size: cover; background-position: center;"></div>
 
-			<?php endwhile; // End of the loop. ?>
+			<div class="content">
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="top-image" style="background: url(<?php  echo the_field('top_image'); ?>); background-size: cover; background-position: center;"></div>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<div class="site-info">
-				<p class="site-title-heading"><?php the_field('body_p'); ?></p>	
+				<?php endwhile; // End of the loop. ?>
 			</div>
 
-			<div class="top-image" style="background: url(<?php  echo the_field('middle_image'); ?>); background-size: cover; background-position: center;"></div>
 
-			<div class="top-image" style="background: url(<?php  echo the_field('bottom_image'); ?>); background-size: cover; background-position: center;"></div>
+			<div class="image-2" style="background: url(<?php  echo the_field('image_2'); ?>); background-size: cover; background-position: center;"></div>
+
+			<div class="image-3" style="background: url(<?php  echo the_field('image_3'); ?>); background-size: cover; background-position: center;"></div>
+
+			<div class="image-4" style="background: url(<?php  echo the_field('image_4'); ?>); background-size: cover; background-position: center;"></div>
+
+			<div class="image-5" style="background: url(<?php  echo the_field('image_5'); ?>); background-size: cover; background-position: center;"></div>
+		
+		</div><!-- #about-grid --> 
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
