@@ -897,7 +897,9 @@ object {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  background: #E7EBEB;
+  padding: 3rem 0rem; }
   .site-footer .social-info-class {
     display: -webkit-box;
     display: -ms-flexbox;
