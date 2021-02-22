@@ -38,6 +38,8 @@ get_header(); ?>
 
 			<div class="image-4" style="background: url(<?php  echo the_field('image_4'); ?>); background-size: cover; background-position: center;"></div>
 
+			<div class="image-1-orange-box"></div>
+
 			<div class="image-5" style="background: url(<?php  echo the_field('image_5'); ?>); background-size: cover; background-position: center;"></div>
 		
 		</div><!-- #about-grid --> 
