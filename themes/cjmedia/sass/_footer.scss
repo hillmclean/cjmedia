@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+.social-info-class {
+	display: flex;
+	justify-content: center;
+
+	.social-icons {
+		display: flex;
+		flex-direction: row;
+		padding-inline-start: 0px;
+		margin: 0rem; 
+		font-size: 2.813rem;
+		list-style: none;
+
+		i {
+			padding: 1rem;
+		}
+
+		a {
+			color: #4D8AA0
+		}
+
+}
+}
+
+.cta-button {
+	background: #3C549E;
+	padding: 1rem 5rem;
+	border-radius: 27px;
+	margin: 0 auto;
+}
+}

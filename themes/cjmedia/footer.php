@@ -11,16 +11,13 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 
-			<?php	
-							if ( ! is_active_sidebar( 'footer' ) ) {
-								return;
-								} ?>
+			<?php if ( ! is_active_sidebar( 'footer' ) ) { return; } ?>
 
-						<div id="secondary" class="widget-area-footer" role="complementary">
-							<?php dynamic_sidebar( 'footer' ); ?>
-						</div>
+				<div id="secondary" class="widget-area-footer" role="complementary">
+					<?php dynamic_sidebar( 'footer' ); ?>
+				</div>
 
-						<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" rel="contact">Contact</a>
+				<a class="cta-button" href="<?php echo esc_url( home_url( '/contact' ) ); ?>" rel="contact">Contact</a>
 
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
