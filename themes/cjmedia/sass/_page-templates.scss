@@ -12,40 +12,47 @@
 }
 
 .site-title-heading {
-    text-align: center;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 3.625rem;
+    
+    .site-title-heading-2 {
+        font-family: $font__main;
+        font-size: 1.5rem;
+    }
 }
 
-.front-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    padding: 0px;
-    width: 90%;
-    margin: 0 auto;
-    align-items: center;
-
+    .container-logo {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
         .front-logo {
-            height: 15rem;
-            width: 15rem;
-            grid-column: span 2;
+            height: 28rem;
+            width: 20rem;
             justify-self: center;
-            border-radius: 100%;
-            box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-top: 10rem;
+            // box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           }
 
+
+          .front-img-flex-box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+          }
         .box-container {
-            height: 20rem;
-            width: 20rem;
-            grid-column: span 2;
-            justify-self: center;    
+            height: 15rem;
+            width: 15rem;
         }
 
         .box-image {
             display: flex;
-            height: 20rem;
-            width: 20rem;
+            height: 15rem;
+            width: 15rem;
             align-items: center;
             justify-content: center;
+            border-radius: 100%;
         }
 
         .box-title {
@@ -53,7 +60,6 @@
             margin: 0;
         }
 
-}
 
 /* About  page */
 

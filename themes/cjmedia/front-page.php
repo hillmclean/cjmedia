@@ -11,12 +11,13 @@ get_template_part( 'template-parts/header', 'page-front' ); ?>
 		<main id="main" class="site-main" role="main">
 			
 		<div class="front-info">
-			<h1 class="site-title-heading">Chelsea Jade</br><span class=site-title-heading-2>Media</span></h1>
+		
 
-			<div class="front-grid">
+				<div class="container-logo">
+					<div class="front-logo" style="background: url(<?php  echo the_field('logo_home'); ?>); background-size: cover; background-position: top;"></div> 
+				</div>
 
-				<div class="front-logo" style="background: url(<?php  echo the_field('logo_home'); ?>); background-size: cover; background-position: top;"></div> 
-
+				<div class="front-img-flex-box">
 				<?php if(have_rows('home_boxes_repeater')): ?> 
 					<?php while(have_rows('home_boxes_repeater')): the_row(); ?>
 					<?php if( get_sub_field('box_background_image') ): ?>
@@ -30,6 +31,8 @@ get_template_part( 'template-parts/header', 'page-front' ); ?>
 					<?php endif; ?>
 					<?php endwhile; ?>	
 				<?php endif; ?>
+
+					</div>
 
 		</div><!-- #front-info -->		
 

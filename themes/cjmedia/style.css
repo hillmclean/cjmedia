@@ -432,8 +432,6 @@ html {
 /* Links */
 a {
   color: royalblue; }
-  a:visited {
-    color: purple; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -688,46 +686,61 @@ object {
       align-self: center; }
 
 .site-title-heading {
-  text-align: center; }
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 3.625rem; }
+  .site-title-heading .site-title-heading-2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem; }
 
-.front-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  padding: 0px;
-  width: 90%;
-  margin: 0 auto;
+.container-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh; }
+
+.front-logo {
+  height: 28rem;
+  width: 20rem;
+  justify-self: center;
+  margin-top: 10rem; }
+
+.front-img-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .front-grid .front-logo {
-    height: 15rem;
-    width: 15rem;
-    grid-column: span 2;
-    justify-self: center;
-    border-radius: 100%;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-  .front-grid .box-container {
-    height: 20rem;
-    width: 20rem;
-    grid-column: span 2;
-    justify-self: center; }
-  .front-grid .box-image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 20rem;
-    width: 20rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .front-grid .box-title {
-    text-align: center;
-    margin: 0; }
+
+.box-container {
+  height: 15rem;
+  width: 15rem; }
+
+.box-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15rem;
+  width: 15rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%; }
+
+.box-title {
+  text-align: center;
+  margin: 0; }
 
 /* About  page */
 .top-image {
