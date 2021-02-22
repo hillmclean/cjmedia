@@ -760,10 +760,21 @@ object {
   grid-template-rows: 11rem 33rem 11rem 11rem 22rem 11rem;
   width: 90vw;
   margin: 0 auto;
-  padding-bottom: 4rem; }
+  padding-bottom: 4rem;
+  position: relative; }
   .about-grid .image-1 {
     grid-column: 1 / 3;
     grid-row: 1 / 2; }
+  .about-grid .image-1-blue-box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background: #8EC6BF;
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    z-index: -1; }
   .about-grid .content {
     grid-column: 1 / 3;
     grid-row: 2 / 3; }
@@ -777,6 +788,16 @@ object {
     grid-column: 2 / 3;
     grid-row: 3 / 5;
     margin: 0rem 0rem 1rem 1rem; }
+  .about-grid .image-1-red-box {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    background: #DD7D74;
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    z-index: -1; }
   .about-grid .image-4 {
     grid-column: 1 / 3;
     grid-row: 5 / 6;
