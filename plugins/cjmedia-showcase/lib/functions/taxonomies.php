@@ -18,8 +18,8 @@ function cjmedia_showcase_tax() {
 		'parent_item'                => __( 'Parent Item', 'text_domain' ),
 		'parent_item_colon'          => __( 'Parent Item:', 'text_domain' ),
 		'new_item_name'              => __( 'New Item Name', 'text_domain' ),
-		'add_new_item'               => __( 'Add New Item', 'text_domain' ),
-		'edit_item'                  => __( 'Edit Item', 'text_domain' ),
+		'add_new_item'               => __( 'Add New Category', 'text_domain' ),
+		'edit_item'                  => __( 'Edit Category', 'text_domain' ),
 		'update_item'                => __( 'Update Item', 'text_domain' ),
 		'view_item'                  => __( 'View Item', 'text_domain' ),
 		'separate_items_with_commas' => __( 'Separate items with commas', 'text_domain' ),
@@ -40,6 +40,8 @@ function cjmedia_showcase_tax() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
+        'query_var'         => true,
+        'rewrite'           => array('slug' => 'category')
 	);
 	register_taxonomy( 'showcase_category', array( 'showcase' ), $args );
 

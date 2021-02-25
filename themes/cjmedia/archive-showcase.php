@@ -41,17 +41,24 @@ get_header(); ?>
 				));
 				if (! empty($terms) && ! is_wp_error($terms)) :
 				?>
+			
+			<?php 
+				$image = get_field('category_image');
+				$size = 'full'; // (thumbnail, medium, large, full or custom size)
+				if( $image ) {
+					echo wp_get_attachment_image( $image, $size );
+				} ?>
+
 				
-				<h2 class="product-type-title">Categories</h2>
 				<div class="product-type">
 					<?php foreach($terms as $term) : ?>
 						<p>
 						<a href="<?php echo get_term_link($term); ?>">
 						<?php echo $term->name ?></a>
 						</p>
-
 					<?php endforeach; ?>
 					<?php endif; ?>
+
 				</div>
 
 

@@ -20,7 +20,7 @@ function cjmedia_cpt_showcase() {
 		'parent_item_colon'     => __( 'Parent Showcase:', 'text_domain' ),
 		'all_items'             => __( 'All Projects', 'text_domain' ),
 		'add_new_item'          => __( 'Add New Project', 'text_domain' ),
-		'add_new'               => __( 'Add New', 'text_domain' ),
+		'add_new'               => __( 'Add New Project', 'text_domain' ),
 		'new_item'              => __( 'New Project', 'text_domain' ),
 		'edit_item'             => __( 'Edit Project', 'text_domain' ),
 		'update_item'           => __( 'Update Project', 'text_domain' ),
@@ -57,6 +57,8 @@ function cjmedia_cpt_showcase() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'rewrite' 				=> array('with_front' => true),
+		'cptp_permalink_structure' => '%showcase_category%/%postname%/',
 	);
 	register_post_type( 'showcase', $args );
 

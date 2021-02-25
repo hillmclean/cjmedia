@@ -817,6 +817,11 @@ object {
     grid-row: 6 / 7;
     margin-top: 1rem; }
 
+/* Showcase Category Page */
+.cat-image {
+  height: 10rem;
+  width: 10rem; }
+
 .site-header {
   position: fixed;
   width: 100%;
