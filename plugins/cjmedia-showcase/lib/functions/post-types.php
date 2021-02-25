@@ -44,7 +44,7 @@ function cjmedia_cpt_showcase() {
 		'description'           => __( 'Where to post film work.', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes', 'post-formats' ),
-		'hierarchical'          => false,
+		'hierarchical'          => true,
 		'public'                => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,

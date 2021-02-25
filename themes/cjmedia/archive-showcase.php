@@ -41,13 +41,6 @@ get_header(); ?>
 				));
 				if (! empty($terms) && ! is_wp_error($terms)) :
 				?>
-			
-			<?php 
-				$image = get_field('category_image');
-				$size = 'full'; // (thumbnail, medium, large, full or custom size)
-				if( $image ) {
-					echo wp_get_attachment_image( $image, $size );
-				} ?>
 
 				
 				<div class="product-type">
@@ -56,10 +49,21 @@ get_header(); ?>
 						<a href="<?php echo get_term_link($term); ?>">
 						<?php echo $term->name ?></a>
 						</p>
+			
+
 					<?php endforeach; ?>
 					<?php endif; ?>
-
 				</div>
+
+				<?php
+	$args = array( 
+		'post_type' => 'showcase',
+		'posts_per_page' => 16,
+		'order' => 'ASC'
+	);
+	$products = new WP_Query($args);
+	?>
+
 
 
 <!-- Product Grid -->
