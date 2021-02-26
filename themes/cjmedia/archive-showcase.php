@@ -28,41 +28,32 @@ get_header(); ?>
 							<h1 class="shop-title-mobile"><?php the_title(); ?></h1>
 							<div class="shop-title-dkp"><?php the_content(); ?></div>
 						</div> 
-
-
 		</header>
 
-
-		<?php endforeach; wp_reset_postdata(); ?>  
+		<?php endforeach;?>  
 
 			<?php $terms = get_terms( array(
 					'taxonomy'=>'showcase_category',
+					'field' => 'slug', 
 					'hide_empty' => 0,
 				));
 				if (! empty($terms) && ! is_wp_error($terms)) :
 				?>
-
 				
-				<div class="product-type">
+
+<div class="product-type">
 					<?php foreach($terms as $term) : ?>
 						<p>
 						<a href="<?php echo get_term_link($term); ?>">
 						<?php echo $term->name ?></a>
 						</p>
-			
+						<p><?php echo get_field('test',$term); ?></p>
+						<div class="cat-image" style="background: url('<?php echo the_field('category_image',$term); ?>') no-repeat; background-size: contain; background-position: center;" ></div>
+
 
 					<?php endforeach; ?>
 					<?php endif; ?>
 				</div>
-
-				<?php
-	$args = array( 
-		'post_type' => 'showcase',
-		'posts_per_page' => 16,
-		'order' => 'ASC'
-	);
-	$products = new WP_Query($args);
-	?>
 
 
 
