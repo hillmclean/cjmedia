@@ -47,7 +47,6 @@ get_header(); ?>
 						<a href="<?php echo get_term_link($term); ?>">
 						<?php echo $term->name ?></a>
 						</p>
-						<p><?php echo get_field('test',$term); ?></p>
 						<div class="cat-image" style="background: url('<?php echo the_field('category_image',$term); ?>') no-repeat; background-size: contain; background-position: center;" ></div>
 
 

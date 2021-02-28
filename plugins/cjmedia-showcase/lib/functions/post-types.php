@@ -58,7 +58,7 @@ function cjmedia_cpt_showcase() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 		'rewrite' 				=> array('with_front' => true),
-		'cptp_permalink_structure' => '%showcase_category%/%postname%/',
+		'cptp_permalink_structure' => '/%showcase_category%/%postname%/',
 	);
 	register_post_type( 'showcase', $args );
 

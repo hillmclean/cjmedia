@@ -237,8 +237,7 @@ textarea {
   color: #404040;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
+  font-size: 1rem; }
 
 /* Headings */
 h1 {
@@ -821,6 +820,26 @@ object {
 .cat-image {
   height: 10rem;
   width: 10rem; }
+
+.video-embed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .video-embed .fa-play {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    font-size: 3em;
+    text-align: center; }
+  .video-embed img {
+    width: 100%;
+    height: auto; }
 
 .site-header {
   position: fixed;

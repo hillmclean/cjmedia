@@ -176,3 +176,24 @@
     height: 10rem;
     width: 10rem;
 }
+
+
+.video-embed {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+   .fa-play {
+       position: absolute;
+       z-index: 100;
+       color: white;
+       font-size: 3em;
+       text-align: center;
+   }
+
+   img {
+    width: 100%;
+    height: auto; 
+   }
+}
+
