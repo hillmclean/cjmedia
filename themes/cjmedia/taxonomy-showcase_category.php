@@ -18,6 +18,23 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 
+<?php $terms = get_terms( array(
+					'taxonomy'=>'showcase_category',
+					'hide_empty' => 0,
+				));
+				if (! empty($terms) && ! is_wp_error($terms)) :
+				?>
+				
+				<div class="product-type">
+					<?php foreach($terms as $term) : ?>
+						<p><a href="<?php echo get_term_link($term); ?>">
+						<?php echo $term->name ?>
+					</a>
+					</p>
+
+					<?php endforeach; ?>
+					<?php endif; ?>
+
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>

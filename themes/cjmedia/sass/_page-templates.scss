@@ -183,6 +183,12 @@
     justify-content: center;
     align-items: center;
 
+    .wp-video-popup {
+        display: flex; 
+        justify-content: center;
+        align-items: center;  
+    }
+
    .fa-play {
        position: absolute;
        z-index: 100;
