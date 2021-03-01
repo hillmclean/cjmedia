@@ -10,22 +10,21 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<header class="shop-tax-header">
+	
+			<h1><?php get_the_archive_title()?></h1>
+			<div class="taxonomy-description"><?php the_archive_description() ?>
+			</div>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
 
-<?php $terms = get_terms( array(
+			<?php $terms = get_terms( array(
 					'taxonomy'=>'showcase_category',
 					'hide_empty' => 0,
 				));
 				if (! empty($terms) && ! is_wp_error($terms)) :
 				?>
 				
-				<div class="product-type">
+				<div class="showcase-categories">
 					<?php foreach($terms as $term) : ?>
 						<p><a href="<?php echo get_term_link($term); ?>">
 						<?php echo $term->name ?>
@@ -34,8 +33,11 @@ get_header(); ?>
 
 					<?php endforeach; ?>
 					<?php endif; ?>
-
+					<div class="tax-grid-box" ></div>
+				</div>
 			</header><!-- .page-header -->
+
+			<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

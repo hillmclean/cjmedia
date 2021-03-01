@@ -177,6 +177,19 @@
     width: 10rem;
 }
 
+.shop-title-box {
+    margin: 5em 0em;
+    text-align: center;;
+}
+
+/* Taxonomy Pages */
+
+.showcase-categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .video-embed {
     display: flex; 
@@ -202,4 +215,3 @@
     height: auto; 
    }
 }
-

@@ -26,7 +26,6 @@ get_header(); ?>
 				<?php foreach ( $showcase_page as $post ) : setup_postdata( $post ); ?>
 						<div class="shop-title-box">
 							<h1 class="shop-title-mobile"><?php the_title(); ?></h1>
-							<div class="shop-title-dkp"><?php the_content(); ?></div>
 						</div> 
 		</header>
 

@@ -821,6 +821,26 @@ object {
   height: 10rem;
   width: 10rem; }
 
+.shop-title-box {
+  margin: 5em 0em;
+  text-align: center; }
+
+/* Taxonomy Pages */
+.showcase-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .video-embed {
   display: -webkit-box;
   display: -ms-flexbox;
