@@ -228,19 +228,30 @@
 
 /* Taxonomy Pages */
 
-.shop-tax-header {
-    h1 {
-        margin: 5em 0em;
-        text-align: center; 
-    }
+.showcase-tax-header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #DD7D74;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    width: 70%;
+    text-align: center;
 }
 
 .showcase-categories {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+
+    a {
+        padding: .5rem .7rem;
+        text-decoration: none;
+        color: #EBB67A;
+        &:hover {
+            color:#DD7D74;
+          }
+    }
 }
 
 .video-embed {
