@@ -945,6 +945,12 @@ object {
     width: 100%;
     height: auto; }
 
+.type-showcase {
+  background: #ebb67a; }
+  .type-showcase .entry-header {
+    padding: 1em;
+    text-align: center; }
+
 .site-header {
   position: fixed;
   width: 100%;
