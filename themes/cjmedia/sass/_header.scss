@@ -44,6 +44,8 @@
 	transition-timing-function: ease-in-out;
 	transition-property: all;
 	transition-duration: .8s;
+	background: white;
+    height: 100vh;
 		@include desktop {
 			width: auto;
 			display: flex;
@@ -77,6 +79,7 @@
 	li {
 	    display: flex;
 	    justify-content: flex-end;
+		font-size: 1.5em;
 	    &:last-child > a {
 		background: #3C549E;
 		padding: 1rem 5rem;

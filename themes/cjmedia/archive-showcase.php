@@ -39,23 +39,20 @@ get_header(); ?>
 				if (! empty($terms) && ! is_wp_error($terms)) :
 				?>
 				
-
-<div class="product-type">
-					<?php foreach($terms as $term) : ?>
-						<p>
-						<a href="<?php echo get_term_link($term); ?>">
-						<?php echo $term->name ?></a>
+				<div class="showcase-type">
+				<?php foreach($terms as $term) : ?>
+					<div class="showcase-container">
+						<div class="cat-image" style="background: url('<?php echo the_field('category_image',$term); ?>') no-repeat; background-size: cover; background-position: center;" >
+						</div>
+						<p class="cat-title">
+							<a href="<?php echo get_term_link($term); ?>">
+							<?php echo $term->name ?></a>
 						</p>
-						<div class="cat-image" style="background: url('<?php echo the_field('category_image',$term); ?>') no-repeat; background-size: contain; background-position: center;" ></div>
-
-
-					<?php endforeach; ?>
-					<?php endif; ?>
+					</div> <!-- showcase-type-->
+				<?php endforeach; ?>
+				
+				<?php endif; ?>
 				</div>
-
-
-
-<!-- Product Grid -->
 
 <?php wp_reset_postdata(); ?>
 
