@@ -106,3 +106,21 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+function my_theme_archive_title( $title ) {
+	if ( is_category() ) {
+			$title = single_cat_title();
+	} elseif ( is_tag() ) {
+			$title = single_tag_title();
+	} elseif ( is_author() ) {
+			$title = '<span class="vcard">' . get_the_author() . '</span>';
+	} elseif ( is_post_type_archive() ) {
+			$title = post_type_archive_title();
+	} elseif ( is_tax() ) {
+			$title = single_term_title();
+	}
+
+	return $title;
+}
+
+add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
