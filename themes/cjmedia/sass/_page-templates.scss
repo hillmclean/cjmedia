@@ -172,15 +172,25 @@
 
 /* Showcase Category Archive Page */
 
+.showcase-header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #EBB67A;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    width: 70%;
+}
+
+.showcase-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .cat-image {
     border-radius: 5px 5px 0 0;
     width: 100%;
     height: 100%;
-}
-
-.shop-title-box {
-    margin: 5em 0em;
-    text-align: center;;
 }
 
 .showcase-type {
@@ -189,6 +199,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    a {
+        text-decoration: none;
+        color: #404040;
+        font-size: 1.2em;
+    }
 }
 
 .showcase-container {
@@ -203,6 +218,7 @@
     margin: 1em;
     &:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        color:#DD7D74;
       }
 }
 

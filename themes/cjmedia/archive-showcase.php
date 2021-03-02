@@ -22,11 +22,9 @@ get_header(); ?>
 			?>
 
 		<header class="showcase-header">											
-				
-				<?php foreach ( $showcase_page as $post ) : setup_postdata( $post ); ?>
-						<div class="shop-title-box">
-							<h1 class="shop-title-mobile"><?php the_title(); ?></h1>
-						</div> 
+			<?php foreach ( $showcase_page as $post ) : setup_postdata( $post ); ?>
+			<h1 class="showcase-title"><?php the_title(); ?></h1>
+					
 		</header>
 
 		<?php endforeach;?>  
@@ -41,14 +39,15 @@ get_header(); ?>
 				
 				<div class="showcase-type">
 				<?php foreach($terms as $term) : ?>
+					<a href="<?php echo get_term_link($term); ?>">
 					<div class="showcase-container">
 						<div class="cat-image" style="background: url('<?php echo the_field('category_image',$term); ?>') no-repeat; background-size: cover; background-position: center;" >
 						</div>
 						<p class="cat-title">
-							<a href="<?php echo get_term_link($term); ?>">
-							<?php echo $term->name ?></a>
+							<?php echo $term->name ?>
 						</p>
 					</div> <!-- showcase-type-->
+					</a>
 				<?php endforeach; ?>
 				
 				<?php endif; ?>
