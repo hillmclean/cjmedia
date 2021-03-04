@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main-show-tax" role="main">
 
 		<header class="showcase-tax-header">
 			<h1><?php get_the_archive_title()?></h1>
