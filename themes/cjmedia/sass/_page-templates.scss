@@ -284,7 +284,7 @@
     .entry-content {
         // padding: 0 6px;
 //   float: left;
-  width: 24.99999%;
+  width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -304,6 +304,17 @@
               padding: 1em;
               text-align: center;;
           }
+
+          @include tablet {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+
+        @include desktop {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
     }
 }
 

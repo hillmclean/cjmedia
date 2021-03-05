@@ -937,7 +937,7 @@ object {
     height: auto; }
 
 .site-main-show-tax .entry-content {
-  width: 24.99999%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -960,6 +960,15 @@ object {
   .site-main-show-tax .entry-content .entry-header {
     padding: 1em;
     text-align: center; }
+  @media screen and (min-width: 768px) {
+    .site-main-show-tax .entry-content {
+      width: 49.99999%;
+      margin: 6px 0; } }
+  @media screen and (min-width: 1080px) {
+    .site-main-show-tax .entry-content {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%; } }
 
 * {
   -webkit-box-sizing: border-box;
