@@ -14,7 +14,7 @@ get_header(); ?>
 			<h1><?php get_the_archive_title()?></h1>
 		</header><!-- .page-header -->
 			
-
+		<section class="projects">
 			<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
@@ -35,6 +35,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		</section> 
+
 		<?php $terms = get_terms( array(
 					'taxonomy'=>'showcase_category',
 					'hide_empty' => 0,
@@ -45,7 +47,7 @@ get_header(); ?>
 				<div class="showcase-categories">
 					<?php foreach($terms as $term) : ?>
 						<a href="<?php echo get_term_link($term); ?>">
-						<p><?php echo $term->name ?></p>
+						<?php echo $term->name ?>
 					</a>
 
 					<?php endforeach; ?>
