@@ -240,7 +240,6 @@
 
     @include tablet {
         width: 60%;
-
     }
 
     @include desktop {
@@ -249,14 +248,41 @@
 }
 
 .showcase-categories {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    margin: 1.7em;
+
+    @include tablet {
+        margin: 2em;
+    }
 
     a {
         padding: .5rem .7rem;
         text-decoration: none;
-        color: #EBB67A;
-        &:hover {
-            color:#DD7D74;
-          }
+        color: #3c549e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+        
+          @include tablet {
+            margin: 2em;
+
+            &:hover {
+                color:#DD7D74;
+                border-bottom: 3px solid #DD7D74;
+              }
+        }
+    }
+
+    .circle {
+        width: 3em;
+        height: 3em;
+        background-color: #EBB67A;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -2;
     }
 }
 

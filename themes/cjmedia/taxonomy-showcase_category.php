@@ -46,9 +46,12 @@ get_header(); ?>
 				
 				<div class="showcase-categories">
 					<?php foreach($terms as $term) : ?>
+						
 						<a href="<?php echo get_term_link($term); ?>">
-						<?php echo $term->name ?>
-					</a>
+						<?php echo $term->name ?>	
+						<div class="circle"></div>
+						</a>
+						
 
 					<?php endforeach; ?>
 					<?php endif; ?>
