@@ -917,11 +917,13 @@ object {
   margin: 1.7em; }
   @media screen and (min-width: 768px) {
     .showcase-categories {
-      margin: 2em; } }
+      padding: 2em 0em 2em 0em;
+      width: 70%;
+      margin: 0 auto; } }
   .showcase-categories a {
     padding: .5rem .7rem;
     text-decoration: none;
-    color: #3c549e;
+    color: #404040;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -936,8 +938,7 @@ object {
       .showcase-categories a {
         margin: 2em; }
         .showcase-categories a:hover {
-          color: #DD7D74;
-          border-bottom: 3px solid #DD7D74; } }
+          text-shadow: 1px 1px 5px #a09f9f; } }
   .showcase-categories .circle {
     width: 3em;
     height: 3em;

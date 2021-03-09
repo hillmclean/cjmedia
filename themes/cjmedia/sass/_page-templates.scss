@@ -254,13 +254,15 @@
     margin: 1.7em;
 
     @include tablet {
-        margin: 2em;
+        padding: 2em 0em 2em 0em;
+        width: 70%;
+        margin: 0 auto;
     }
 
     a {
         padding: .5rem .7rem;
         text-decoration: none;
-        color: #3c549e;
+        color: #404040;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -270,8 +272,8 @@
             margin: 2em;
 
             &:hover {
-                color:#DD7D74;
-                border-bottom: 3px solid #DD7D74;
+            //    color:#DD7D74;
+               text-shadow: 1px 1px 5px #a09f9f;
               }
         }
     }
