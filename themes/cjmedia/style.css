@@ -1048,6 +1048,36 @@ object {
       .site-main-show-tax .projects .entry-content {
         width: 350px; } }
 
+/** LIGHTBOX MARKUP **/
+.lightbox {
+  /* Default to hidden */
+  display: none;
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* A bit of padding around image */
+  padding: 1em;
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8); }
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block; }
+
+.lightbox iframe {
+  /* Full width and height */
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 .site-header {
   position: fixed;
   width: 100%;
