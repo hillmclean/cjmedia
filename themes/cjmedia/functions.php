@@ -88,13 +88,16 @@ function cjmedia_scripts() {
 	wp_enqueue_style('cjmedia-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300;500;900&display=swap');
 	wp_enqueue_script( 'cjmedia-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'cjmedia-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'menu-js', get_template_directory_uri() . '/build/js/menu.min.js', array(), false, true );
+	wp_enqueue_script( 'lightbox-js', get_template_directory_uri() . '/build/js/lightbox.min.js', array(), false, true );
+	wp_enqueue_script('lb-jq', 'https://sorgalla.com/lity/vendor/jquery.js');
+	wp_enqueue_script('lb-js', 'https://sorgalla.com/lity/dist/lity.js');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'cjmedia_scripts' );
 
 /**
