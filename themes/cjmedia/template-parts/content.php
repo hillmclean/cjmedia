@@ -19,16 +19,24 @@
 		?>
 
 		<div class="entry-header">
-			<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail( 'large' ); ?>
-			<?php endif; ?>
+			<?php if ( has_post_thumbnail() ) {
+				$vidImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "full"); 
+				}
+			?>
+
 
 			<?php the_title(); ?>
 
 			<?php if ( 'post' === get_post_type() ) : ?>
-			<div class="entry-meta">
-				<?php cjmedia_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php cjmedia_posted_by(); ?>
-			</div><!-- .entry-meta -->
+			
+				<a href="//www.youtube.com/watch?v=FLBd218SDaA" data-lity data-featherlight="#<?php the_ID(); ?>" >
+					<div id="<?php the_ID(); ?> style="background-color:#000; width:350px; border-radius:50px; color:#ffffff;text-transform: uppercase;  letter-spacing: 2px; height:60px;">
+						<p style="padding-top:10px;">
+						Watch Video <i class="fa fa-play-circle" aria-hidden="true"></i> 
+						</p> 
+					</div>
+				</a>
+
 			<?php endif; ?>
 		</div><!-- .entry-header -->
 

@@ -15,47 +15,32 @@ get_header(); ?>
 		</header><!-- .page-header -->
 			
 		<section class="projects">
-			<?php if ( have_posts() ) : ?>
 
-			<?php /* Start the Loop */ ?>
+
+			<?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+				
+			<div class="project-video-container">
+				<?php if ( has_post_thumbnail() ) {
+					$vidImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "full"); 
+					} ?>
+				<a href="<?php the_field('video_link'); ?>" data-lity data-featherlight="#<?php the_ID(); ?>" >
+					<div id="<?php the_ID(); ?>" style="background: url('<?php echo $vidImg[0]; ?>') no-repeat; width:350px; color:#ffffff; height:60px;">
+						<i class="fa fa-play-circle" aria-hidden="true"></i> 
 			
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-		
+						</div> 
+					</a>
+			
+			</div> <!-- .project-video-container -->
 
 			<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
+			<?php endif;?>
+	
 
-			<?php the_posts_navigation(); ?>
+		</section> <!-- .projects --> 
 
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</section> 
-
-		<?php $terms = get_terms( array(
-					'taxonomy'=>'showcase_category',
-					'hide_empty' => 0,
-				));
-				if (! empty($terms) && ! is_wp_error($terms)) :
-				?>
-				
-				<div class="showcase-categories">
-					<?php foreach($terms as $term) : ?>
-						
-						<a href="<?php echo get_term_link($term); ?>">
-						<?php echo $term->name ?>	
-						<div class="circle"></div>
-						</a>
-						
-
-					<?php endforeach; ?>
-					<?php endif; ?>
-				</div>
+	
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
