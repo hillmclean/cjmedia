@@ -25,7 +25,16 @@
 .container-logo {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
+    @include tablet {
+        justify-content: start;
+        margin-left: 3rem;
+        height: 70vw;
+    }
+
+    @include desktop {
+        height: 50vw;
+    }
 }
 
 .front-logo {
@@ -33,7 +42,10 @@
     width: 20rem;
     justify-self: center;
     margin-top: 10rem;
-    // box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @include tablet {
+        height: 38rem;
+        width: 30rem;
+    }
 }
 
 
@@ -43,11 +55,23 @@
     align-items: center;
     justify-content: space-evenly;
     height: 80vh;
+    @include tablet {
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 40vh;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
 }
 
 .box-container {
     height: 15rem;
     width: 15rem;
+    @include tablet {
+        height: 12rem;
+        width: 12rem;
+        margin: 1em;
+    }
 
     a {
         text-align: center;
@@ -69,6 +93,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 100%;
+    @include tablet {
+        height: 12rem;
+        width: 12rem;
+    }
 }
 
 

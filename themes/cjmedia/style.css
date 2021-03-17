@@ -694,13 +694,27 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh; }
+  height: 80vh; }
+  @media screen and (min-width: 768px) {
+    .container-logo {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: start;
+      margin-left: 3rem;
+      height: 70vw; } }
+  @media screen and (min-width: 1080px) {
+    .container-logo {
+      height: 50vw; } }
 
 .front-logo {
   height: 28rem;
   width: 20rem;
   justify-self: center;
   margin-top: 10rem; }
+  @media screen and (min-width: 768px) {
+    .front-logo {
+      height: 38rem;
+      width: 30rem; } }
 
 .front-img-flex-box {
   display: -webkit-box;
@@ -717,10 +731,27 @@ object {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 80vh; }
+  @media screen and (min-width: 768px) {
+    .front-img-flex-box {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      height: 40vh;
+      margin-right: 2rem;
+      margin-top: 2rem; } }
 
 .box-container {
   height: 15rem;
   width: 15rem; }
+  @media screen and (min-width: 768px) {
+    .box-container {
+      height: 12rem;
+      width: 12rem;
+      margin: 1em; } }
   .box-container a {
     text-align: center;
     margin: 0;
@@ -743,6 +774,10 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 100%; }
+  @media screen and (min-width: 768px) {
+    .box-image {
+      height: 12rem;
+      width: 12rem; } }
 
 /* About  page */
 .site-main-about .entry-title {
