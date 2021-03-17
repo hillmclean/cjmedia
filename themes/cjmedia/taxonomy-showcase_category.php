@@ -24,12 +24,12 @@ get_header(); ?>
 				<?php if ( has_post_thumbnail() ) {
 					$vidImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "full"); 
 					} ?>
+				
 				<a href="<?php the_field('video_link'); ?>" data-lity data-featherlight="#<?php the_ID(); ?>" >
-					<div id="<?php the_ID(); ?>" style="background: url('<?php echo $vidImg[0]; ?>') no-repeat; width:350px; color:#ffffff; height:60px;">
-						<i class="fa fa-play-circle" aria-hidden="true"></i> 
-			
-						</div> 
-					</a>
+					<div id="<?php the_ID(); ?>" class="vid-thumbnail" style="background: url('<?php echo $vidImg[0]; ?>') no-repeat; background-size: cover; background-position: center;">
+						<i class="fa fa-play" aria-hidden="true"></i> 
+					</div> 
+				</a>
 			
 			</div> <!-- .project-video-container -->
 

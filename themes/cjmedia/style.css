@@ -841,18 +841,22 @@ object {
   height: 100%; }
 
 .showcase-type {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  width: 95%;
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .showcase-type {
+      width: 80%; } }
   .showcase-type a {
     text-decoration: none;
     color: #404040;
@@ -866,6 +870,9 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -877,10 +884,16 @@ object {
   height: 30vh;
   border-radius: 5px;
   margin: 1em; }
-  .showcase-container:hover {
-    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    color: #DD7D74; }
+  @media screen and (min-width: 768px) {
+    .showcase-container {
+      width: 350px;
+      height: 200px;
+      margin-left: 1rem;
+      margin-right: 1rem; }
+      .showcase-container:hover {
+        -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        color: #DD7D74; } }
 
 .cat-title {
   padding: 2px 16px; }
@@ -906,49 +919,7 @@ object {
     .showcase-tax-header {
       width: 50%; } }
 
-.showcase-categories {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  margin: 1.7em; }
-  @media screen and (min-width: 768px) {
-    .showcase-categories {
-      padding: 2em 0em 2em 0em;
-      width: 70%;
-      margin: 0 auto; } }
-  .showcase-categories a {
-    padding: .5rem .7rem;
-    text-decoration: none;
-    color: #404040;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 1em; }
-    @media screen and (min-width: 768px) {
-      .showcase-categories a {
-        margin: 2em; }
-        .showcase-categories a:hover {
-          text-shadow: 1px 1px 5px #a09f9f; } }
-  .showcase-categories .circle {
-    width: 3em;
-    height: 3em;
-    background-color: #EBB67A;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -2; }
-
-.video-embed {
+.projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,7 +929,7 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .video-embed .wp-video-popup {
+  .projects .vid-thumbnail {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -967,16 +938,23 @@ object {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
-  .video-embed .fa-play {
+            align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 90vw;
+    height: 200px; }
+    @media screen and (min-width: 768px) {
+      .projects .vid-thumbnail {
+        width: 350px;
+        height: 200px;
+        margin-left: 1rem;
+        margin-right: 1rem; } }
+  .projects .fa-play {
     position: absolute;
     z-index: 100;
     color: white;
     font-size: 3em;
     text-align: center; }
-  .video-embed img {
-    width: 100%;
-    height: auto; }
 
 .site-main-show-tax .projects {
   display: -webkit-box;
