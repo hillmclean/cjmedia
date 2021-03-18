@@ -679,14 +679,6 @@ object {
   -ms-flex-item-align: center;
       align-self: center; }
 
-.site-title-heading {
-  text-align: right;
-  text-transform: uppercase;
-  font-size: 3.625rem; }
-  .site-title-heading .site-title-heading-2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem; }
-
 .container-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,6 +778,15 @@ object {
   text-transform: none;
   padding: 3rem 1.5rem; }
 
+.site-title-heading {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 3.625rem; }
+  @media screen and (min-width: 768px) {
+    .site-title-heading {
+      width: 70vw;
+      margin: 0 auto; } }
+
 .about-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -795,6 +796,10 @@ object {
   margin: 0 auto;
   padding-bottom: 4rem;
   position: relative; }
+  @media screen and (min-width: 768px) {
+    .about-grid {
+      width: 70vw;
+      grid-template-rows: 16rem 30rem 11rem 11rem 28rem 11rem; } }
   .about-grid .image-1 {
     grid-column: 1 / 3;
     grid-row: 1 / 2; }
@@ -808,11 +813,15 @@ object {
     top: -15px;
     left: -30px;
     z-index: -1; }
+    @media screen and (min-width: 768px) {
+      .about-grid .image-1-blue-box {
+        left: -15px; } }
   .about-grid .content {
     grid-column: 1 / 3;
     grid-row: 2 / 3; }
     .about-grid .content p {
-      font-weight: 300; }
+      font-weight: 300;
+      line-height: 1.5; }
   .about-grid .image-2 {
     grid-column: 1 / 2;
     grid-row: 3 / 5;
@@ -845,6 +854,9 @@ object {
     top: 0px;
     left: -30px;
     z-index: -1; }
+    @media screen and (min-width: 768px) {
+      .about-grid .image-1-orange-box {
+        left: -16px; } }
   .about-grid .image-5 {
     grid-column: 1 / 3;
     grid-row: 6 / 7;
