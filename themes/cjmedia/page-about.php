@@ -15,6 +15,12 @@ get_header(); ?>
 			<h1><?php the_field('body_p'); ?></h1>	
 		</div>
 
+		<h1><?php bloginfo( 'name' ); ?></h1>
+
+		<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+
 		<div class="about-grid">
 			
 			<div class="image-1" style="background: url(<?php  echo the_field('image_1'); ?>); background-size: cover; background-position: center;"></div>
@@ -28,6 +34,8 @@ get_header(); ?>
 
 				<?php endwhile; // End of the loop. ?>
 			</div>
+
+			<div class="image-5-top" style="background: url(<?php  echo the_field('image_5'); ?>); background-size: cover; background-position: center;"></div>
 
 
 			<div class="image-2" style="background: url(<?php  echo the_field('image_2'); ?>); background-size: cover; background-position: center;"></div>

@@ -92,6 +92,9 @@
 
     .entry-title {
         display: none;
+        @include desktop {
+            display: flex;
+        }
     }
     h1 {
      font-size: 1.875rem;   
@@ -203,6 +206,15 @@
         grid-column: 1 / 3;
         grid-row: 6 / 7;
         margin-top: 1rem;
+    }
+
+    .image-5-top {
+        display: none;
+        @include desktop {
+            display: flex;
+            width: 13rem;
+            height: 22rem;
+        }
     }
 }
 
