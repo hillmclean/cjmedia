@@ -1006,7 +1006,10 @@ object {
         width: 350px;
         height: 200px;
         margin-left: 1rem;
-        margin-right: 1rem; } }
+        margin-right: 1rem; }
+        .projects .vid-thumbnail:hover {
+          -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); } }
   .projects .fa-play {
     position: absolute;
     z-index: 100;
@@ -1226,8 +1229,8 @@ object {
       font-size: 1.2em;
       letter-spacing: 1px; }
       .site-header .menu li:last-child > a {
-        background: #3C549E;
-        padding: 1rem 5rem;
+        background: #3c559f;
+        padding: .8rem 2rem;
         border-radius: 27px;
         color: white;
         letter-spacing: 2px;
@@ -1328,3 +1331,6 @@ object {
     padding: .7rem 2rem;
     font-family: "Poppins", sans-serif;
     font-size: 1.2em; }
+    .site-footer .cta-button:hover {
+      -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+              box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
