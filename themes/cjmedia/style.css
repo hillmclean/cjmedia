@@ -687,7 +687,7 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   height: 80vh; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 650px) {
     .container-logo {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
@@ -700,7 +700,7 @@ object {
   width: 20rem;
   justify-self: center;
   margin-top: 10rem; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 650px) {
     .front-logo {
       height: 38rem;
       width: 30rem;
@@ -721,7 +721,7 @@ object {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 80vh; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 650px) {
     .front-img-flex-box {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -737,7 +737,7 @@ object {
 .box-container {
   height: 15rem;
   width: 15rem; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 650px) {
     .box-container {
       height: 12rem;
       width: 12rem;
@@ -764,7 +764,7 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 100%; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 650px) {
     .box-image {
       height: 12rem;
       width: 12rem; } }
@@ -783,11 +783,19 @@ object {
   text-transform: none;
   padding: 3rem 1.5rem; }
 
+.site-main-about .site-title {
+  display: none; }
+  @media screen and (min-width: 1080px) {
+    .site-main-about .site-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
 .site-title-heading {
   text-align: right;
   text-transform: uppercase;
   font-size: 3.625rem; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 650px) {
     .site-title-heading {
       width: 70vw;
       margin: 0 auto; } }
@@ -796,15 +804,15 @@ object {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
-  grid-template-rows: 11rem 33rem 11rem 11rem 22rem 11rem;
+  grid-template-rows: 11rem auto 11rem 11rem 22rem 11rem;
   width: 90vw;
   margin: 0 auto;
   padding-bottom: 4rem;
   position: relative; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 650px) {
     .about-grid {
       width: 70vw;
-      grid-template-rows: 16rem 30rem 11rem 11rem 28rem 11rem; } }
+      grid-template-rows: 16rem auto 11rem 11rem 28rem 15rem; } }
   .about-grid .image-1 {
     grid-column: 1 / 3;
     grid-row: 1 / 2; }
@@ -818,7 +826,7 @@ object {
     top: -15px;
     left: -30px;
     z-index: -1; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 650px) {
       .about-grid .image-1-blue-box {
         left: -15px; } }
   .about-grid .content {
@@ -859,22 +867,13 @@ object {
     top: 0px;
     left: -30px;
     z-index: -1; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 650px) {
       .about-grid .image-1-orange-box {
         left: -16px; } }
   .about-grid .image-5 {
     grid-column: 1 / 3;
     grid-row: 6 / 7;
     margin-top: 1rem; }
-  .about-grid .image-5-top {
-    display: none; }
-    @media screen and (min-width: 1080px) {
-      .about-grid .image-5-top {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 13rem;
-        height: 22rem; } }
 
 /* Showcase Category Archive Page */
 .showcase-header {
@@ -913,7 +912,7 @@ object {
           align-items: center;
   width: 95%;
   margin: 0 auto; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 650px) {
     .showcase-type {
       width: 80%; } }
   .showcase-type a {
@@ -943,7 +942,7 @@ object {
   height: 30vh;
   border-radius: 5px;
   margin: 1em; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 650px) {
     .showcase-container {
       width: 350px;
       height: 200px;
@@ -967,11 +966,11 @@ object {
           justify-content: center;
   border-bottom: 5px solid #DD7D74;
   margin: 0 auto;
-  margin-top: 5em;
+  margin-top: 8em;
   margin-bottom: 3em;
   width: 70%;
   text-align: center; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 650px) {
     .showcase-tax-header {
       width: 60%; } }
   @media screen and (min-width: 1080px) {
@@ -1002,7 +1001,7 @@ object {
     margin-bottom: 1rem;
     width: 90vw;
     height: 200px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 650px) {
       .projects .vid-thumbnail {
         width: 350px;
         height: 200px;
@@ -1023,7 +1022,7 @@ object {
       flex-wrap: wrap;
   width: 95%;
   margin: 0 auto; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 650px) {
     .site-main-show-tax .projects {
       width: 80%; } }
   @media screen and (min-width: 1080px) {
@@ -1042,7 +1041,7 @@ object {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 650px) {
       .site-main-show-tax .projects article {
         -webkit-box-flex: 49.99999%;
             -ms-flex: 49.99999%;
@@ -1078,7 +1077,7 @@ object {
     .site-main-show-tax .projects .entry-content .entry-header {
       padding: 1em;
       text-align: center; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 650px) {
       .site-main-show-tax .projects .entry-content {
         width: 350px;
         margin: 1em; } }
@@ -1192,6 +1191,9 @@ object {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 10vh; } }
     .site-header .menu a {
       right: -100vw;
@@ -1202,7 +1204,7 @@ object {
       -webkit-transition-duration: .1s;
               transition-duration: .1s;
       margin: 1.4rem;
-      color: #333569;
+      color: #404040;
       text-transform: uppercase;
       border-bottom: solid transparent .15rem; }
       @media screen and (min-width: 1080px) {
@@ -1220,7 +1222,8 @@ object {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      font-size: 1.5em; }
+      font-size: 1.2em;
+      letter-spacing: 1px; }
       .site-header .menu li:last-child > a {
         background: #3C549E;
         padding: 1rem 5rem;
@@ -1233,7 +1236,7 @@ object {
           .site-header .menu li:last-child > a {
             margin: .7rem;
             width: 100%;
-            padding: .7rem 2.25rem; } }
+            padding: .7rem 2.5rem; } }
   .site-header .menu-show {
     display: block;
     width: 100vw;
@@ -1272,7 +1275,8 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   background: #E7EBEB;
-  padding: 3rem 0rem; }
+  padding: 3rem 0rem;
+  margin-top: 4em; }
   .site-footer .social-info-class {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -90,6 +90,7 @@
 
 .site-main-about {
 
+
     .entry-title {
         display: none;
         @include desktop {
@@ -100,6 +101,12 @@
      font-size: 1.875rem;   
      text-transform: none;
      padding: 3rem 1.5rem;
+    }
+    .site-title {
+        display: none;
+        @include desktop {
+            display: flex;
+        }
     }
 }
 
@@ -117,14 +124,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    grid-template-rows: 11rem 33rem 11rem 11rem 22rem 11rem;
+    grid-template-rows: 11rem auto 11rem 11rem 22rem 11rem;
     width: 90vw;
     margin: 0 auto;
     padding-bottom: 4rem;
     position: relative;
     @include tablet {
         width: 70vw;
-        grid-template-rows: 16rem 30rem 11rem 11rem 28rem 11rem;
+        grid-template-rows: 16rem auto 11rem 11rem 28rem 15rem;
     }
 
     .image-1 {
@@ -207,15 +214,6 @@
         grid-row: 6 / 7;
         margin-top: 1rem;
     }
-
-    .image-5-top {
-        display: none;
-        @include desktop {
-            display: flex;
-            width: 13rem;
-            height: 22rem;
-        }
-    }
 }
 
 /* Showcase Category Archive Page */
@@ -297,7 +295,7 @@
     justify-content: center;
     border-bottom: 5px solid #DD7D74;
     margin: 0 auto;
-    margin-top: 5em;
+    margin-top: 8em;
     margin-bottom: 3em;
     width: 70%;
     text-align: center;

@@ -54,6 +54,7 @@
 			right: auto;
 			flex-direction: row;
 			justify-content: flex-end;
+			align-items: center;
 			height: 10vh;
 		}
 	text-align: right;
@@ -63,7 +64,7 @@
 	    transition-property: all;
 	    transition-duration: .1s;
 		margin: 1.4rem;
-		color: #333569;
+		color: $color__text-main;
 	    @include desktop {
 		margin: 1.4rem;
 	    }
@@ -81,7 +82,8 @@
 	li {
 	    display: flex;
 	    justify-content: flex-end;
-		font-size: 1.5em;
+		font-size: 1.2em;
+		letter-spacing: 1px;
 	    &:last-child > a {
 		background: #3C549E;
 		padding: 1rem 5rem;
@@ -93,7 +95,7 @@
 		@include desktop {
 		    margin: .7rem; 
 		    width: 100%;
-		    padding: .7rem 2.25rem;
+		    padding: .7rem 2.5rem;
 		}
 	    }
 	}
