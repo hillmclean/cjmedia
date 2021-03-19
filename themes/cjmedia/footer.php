@@ -17,7 +17,7 @@
 					<?php dynamic_sidebar( 'footer' ); ?>
 				</div>
 
-				<a class="cta-button" href="<?php echo esc_url( home_url( '/contact' ) ); ?>" rel="contact">Contact</a>
+				<a class="cta-button" href="<?php echo esc_url( home_url( '/contact' ) ); ?>" rel="contact">Message</a>
 
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

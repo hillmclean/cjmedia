@@ -65,6 +65,7 @@
 	    transition-duration: .1s;
 		margin: 1.4rem;
 		color: $color__text-main;
+		font-family: $font__secondary;
 	    @include desktop {
 		margin: 1.4rem;
 	    }
@@ -89,13 +90,13 @@
 		padding: 1rem 5rem;
 		border-radius: 27px;
 		color: white;
-		letter-spacing: 3px;
+		letter-spacing: 2px;
 		width: auto;
 		text-align: center;
 		@include desktop {
-		    margin: .7rem; 
+		    margin: .5rem; 
 		    width: 100%;
-		    padding: .7rem 2.5rem;
+		    padding: .7rem 2rem;
 		}
 	    }
 	}

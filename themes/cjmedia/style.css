@@ -1205,6 +1205,7 @@ object {
               transition-duration: .1s;
       margin: 1.4rem;
       color: #404040;
+      font-family: "Poppins", sans-serif;
       text-transform: uppercase;
       border-bottom: solid transparent .15rem; }
       @media screen and (min-width: 1080px) {
@@ -1229,14 +1230,14 @@ object {
         padding: 1rem 5rem;
         border-radius: 27px;
         color: white;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         width: auto;
         text-align: center; }
         @media screen and (min-width: 1080px) {
           .site-header .menu li:last-child > a {
-            margin: .7rem;
+            margin: .5rem;
             width: 100%;
-            padding: .7rem 2.5rem; } }
+            padding: .7rem 2rem; } }
   .site-header .menu-show {
     display: block;
     width: 100vw;
@@ -1295,18 +1296,35 @@ object {
       -webkit-padding-start: 0px;
               padding-inline-start: 0px;
       margin: 0rem;
-      font-size: 2.813rem;
+      font-size: 2rem;
       list-style: none; }
       .site-footer .social-info-class .social-icons i {
-        padding: 1rem; }
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background: #4D8AA0;
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+        margin: 10px; }
       .site-footer .social-info-class .social-icons a {
-        color: #4D8AA0; }
+        color: white;
+        text-decoration: none; }
   .site-footer .cta-button {
     background: #3C549E;
-    padding: 1rem 5rem;
     border-radius: 27px;
     margin: 0 auto;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    letter-spacing: 3px; }
+    letter-spacing: 2px;
+    padding: .7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em; }

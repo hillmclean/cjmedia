@@ -35,9 +35,6 @@ get_header(); ?>
 				<?php endwhile; // End of the loop. ?>
 			</div>
 
-			<div class="image-5-top" style="background: url(<?php  echo the_field('image_5'); ?>); background-size: cover; background-position: center;"></div>
-
-
 			<div class="image-2" style="background: url(<?php  echo the_field('image_2'); ?>); background-size: cover; background-position: center;"></div>
 
 			<div class="image-3" style="background: url(<?php  echo the_field('image_3'); ?>); background-size: cover; background-position: center;"></div>
