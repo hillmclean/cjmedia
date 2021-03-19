@@ -85,7 +85,19 @@
     }
 }
 
+/* contact  page */
 
+.site-main-contact, .wpcf7-form {
+    textarea {
+    border-radius: 40px;
+    }
+    input {
+        border-radius: 40px;
+    }
+}
+.site-main-contact {
+    margin: 10em 2em 2em 2em;
+}
 /* About  page */
 
 .site-main-about {

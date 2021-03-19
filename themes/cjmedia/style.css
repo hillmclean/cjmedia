@@ -769,6 +769,16 @@ object {
       height: 12rem;
       width: 12rem; } }
 
+/* contact  page */
+.site-main-contact textarea, .wpcf7-form textarea {
+  border-radius: 40px; }
+
+.site-main-contact input, .wpcf7-form input {
+  border-radius: 40px; }
+
+.site-main-contact {
+  margin: 10em 2em 2em 2em; }
+
 /* About  page */
 .site-main-about .entry-title {
   display: none; }
