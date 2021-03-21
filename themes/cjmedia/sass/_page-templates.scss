@@ -127,14 +127,29 @@
 .site-title-heading {
     font-family: $font__secondary;
     text-align: right;
-    font-size: 2em;
     width: 90vw;
     margin: 0 auto;
     padding: 1em 0em 1em 0em;
+    font-size: 2em;
     @include tablet {
         width: 70vw;
         margin: 0 auto;
         padding: 2em 0em 2em 0em;
+    }
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #EBB67A;
+        border-radius: 100%;
+        width: 13.5em;
+        height: 13.5em;
+        text-align: center;
+        padding: 1em 1em 1em 1em; 
+        font-size: 1.2em;
+        p {
+            padding: 1em 1.2em 1em 1.2em;
+        }
     }
 }
 
@@ -209,7 +224,7 @@
         @include desktop {
             grid-column: 1 / 2;
             grid-row: 2 / 3; 
-            margin: 0rem 0rem 0rem 0rem;
+            margin: 1rem 0rem 0rem 0rem;
         }
     }
 
@@ -227,6 +242,9 @@
             grid-column: 1 / 2;
             grid-row: 2 / 3; 
             left: -15px;
+            top: 237px;
+            width: 9rem;
+            height: 13rem;
         }
     }
 
@@ -237,7 +255,7 @@
         @include desktop {
             grid-column: 2 / 3;
             grid-row: 2 / 3; 
-            margin: 0rem 0rem;
+            margin: 1rem 0rem 0rem 0rem;
         }
     }
 
