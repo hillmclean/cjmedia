@@ -74,10 +74,6 @@
 	    border-bottom: solid transparent .15rem;
 	    @include desktop {
 		padding-bottom: .2rem;
-		&:active,
-		&:hover {
-		    border-bottom: solid green .15rem;
-		}
 	    }
 	}
 	li {
@@ -86,7 +82,7 @@
 		font-size: 1.2em;
 		letter-spacing: 1px;
 	    &:last-child > a {
-		background: hsl(225, 45%, 43%);
+		background: #3C549E;
 		padding: .8rem 2rem;
 		border-radius: 27px;
 		color: white;
@@ -97,6 +93,10 @@
 		    margin: .5rem; 
 		    width: 100%;
 		    padding: .7rem 2rem;
+			&:active,
+		&:hover {
+			box-shadow: $btn__shadow;
+		}
 		}
 	    }
 	}

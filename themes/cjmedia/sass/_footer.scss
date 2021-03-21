@@ -55,7 +55,7 @@
         font-family: $font__secondary;
         font-size: 1.2em;
         &:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            box-shadow: $btn__shadow;
     }
 }
 }

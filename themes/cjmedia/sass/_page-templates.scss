@@ -87,12 +87,44 @@
 
 /* contact  page */
 
+.contact-header-box  {
+    h1 {
+        font-family: $font__main;
+        text-transform: uppercase;
+        font-size: 35px;
+        margin-bottom: 3px;
+    }
+    h2 {
+        display: flex;
+        font-size: 1.875rem;   
+        text-transform: none;
+        font-family: $font__secondary;
+        font-size: 50px;
+        margin-top: 0px;
+        font-weight: 100;
+    }
+}
+
 .site-main-contact, .wpcf7-form {
     textarea {
-    border-radius: 40px;
+    border-radius: 23px;
+    border: 1px solid #4d8aa0;
     }
     input {
-        border-radius: 40px;
+        border-radius: 23px;
+        border: 1px solid #4d8aa0;
+    }
+    .wpcf7-submit {
+        border: none;
+    }
+
+    .wpcf7-submit {
+        margin-left: 0px;
+        font-family: $font__secondary;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: .8rem 2rem;
     }
 }
 .site-main-contact {

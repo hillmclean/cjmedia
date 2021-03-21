@@ -11,6 +11,20 @@ get_header(); ?>
 <div id="primary" class="content-area">
 		<main id="main" class="site-main-contact" role="main">
 
+		<div class="contact-header">
+
+			<div class="contact-header-box">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<h2><?php bloginfo( 'name' ); ?></h2>
+			</div><!-- .entry-header -->
+
+
+			<div class="site-title-heading">
+				<?php the_field('body_p'); ?>	
+			</div>
+
+		</div>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
