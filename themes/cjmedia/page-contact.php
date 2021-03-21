@@ -16,12 +16,9 @@ get_header(); ?>
 			<div class="contact-header-box">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				<h2><?php bloginfo( 'name' ); ?></h2>
+				<div class="contact-box"></div>
 			</div><!-- .entry-header -->
 
-
-			<div class="site-title-heading">
-				<?php the_field('body_p'); ?>	
-			</div>
 
 		</div>
 

@@ -87,7 +87,15 @@
 
 /* contact  page */
 
-.contact-header-box  {
+.contact-header  {
+    margin-top: 8em;
+    height: 50vh;
+    max-width: 500px;
+    @include tablet {
+        margin-bottom: 5em;
+        padding-top: 8em;
+        margin: 0 auto;
+    }
     h1 {
         font-family: $font__main;
         text-transform: uppercase;
@@ -95,40 +103,89 @@
         margin-bottom: 3px;
     }
     h2 {
-        display: flex;
-        font-size: 1.875rem;   
+        display: flex;  
         text-transform: none;
         font-family: $font__secondary;
         font-size: 50px;
         margin-top: 0px;
         font-weight: 100;
+        margin-bottom: 2px;
+        width: 340px;
     }
+}
+
+.contact-header-box {
+    position: relative;
+}
+
+.contact-box {
+    background-color: #DD7D74;
+    border-radius: 100%;
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    left: 170px;
+    top: 180px;
+    @include tablet {
+        left: 300px;
+        top: 100px;
+    }
+}
+
+.wp-block-contact-form-7-contact-form-selector {
+    margin-top: 3em;
 }
 
 .site-main-contact, .wpcf7-form {
     textarea {
     border-radius: 23px;
     border: 1px solid #4d8aa0;
+    font-weight: 200;
+    padding: 1.5em;
+    width: 90vw;
+    max-width: 500px;
+    margin: 0 auto;
     }
     input {
         border-radius: 23px;
         border: 1px solid #4d8aa0;
-    }
-    .wpcf7-submit {
-        border: none;
+        font-weight: 200;
+        padding: 1.5em;
+        width: 90vw;
+        max-width: 500px;
+        margin: 0 auto;
+        &:target {
+            border: none;
+        }
     }
 
     .wpcf7-submit {
-        margin-left: 0px;
+        margin: 0 auto;
         font-family: $font__secondary;
         color: white;
         text-transform: uppercase;
         letter-spacing: 2px;
         padding: .8rem 2rem;
+        border: none;
+        width: 10em;
+        font-size: 1.2em;
+        background-color: #DD7D74;
+        &:hover {
+            box-shadow: $btn__shadow;
+            color: white;
+    }
     }
 }
 .site-main-contact {
-    margin: 10em 2em 2em 2em;
+    margin: 0 auto;
+    width: 90vw;
+    p {
+    font-weight: 200;
+    }
+    .entry-content {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 
