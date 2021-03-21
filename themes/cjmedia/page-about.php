@@ -11,14 +11,15 @@ get_header(); ?>
 <div id="primary" class="content-area">
 		<main id="main" class="site-main-about" role="main">
 
-		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 
 		<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</header><!-- .entry-header -->
+ 
+		<h2 class="site-title"><?php bloginfo( 'name' ); ?></h2>
 
 	<div class="site-title-heading">
-			<h1><?php the_field('body_p'); ?></h1>	
+			<?php the_field('body_p'); ?>	
 		</div>
 
 		<div class="about-grid">
