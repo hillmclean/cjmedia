@@ -9,20 +9,23 @@ get_header(); ?>
 
 
 <div id="primary" class="content-area">
-		<main id="main" class="site-main-about" role="main">
+	<main id="main" class="site-main-about" role="main">
 
+	<div class="about-header">
 
-		<header class="entry-header">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		</header><!-- .entry-header -->
+		<div class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<h2><?php bloginfo( 'name' ); ?></h2>
+		</div><!-- .entry-header -->
  
-		<h2 class="site-title"><?php bloginfo( 'name' ); ?></h2>
 
-	<div class="site-title-heading">
+		<div class="site-title-heading">
 			<?php the_field('body_p'); ?>	
 		</div>
 
-		<div class="about-grid">
+	</div>
+
+	<div class="about-grid">
 			
 			<div class="image-1" style="background: url(<?php  echo the_field('image_1'); ?>); background-size: cover; background-position: center;"></div>
 
@@ -50,7 +53,7 @@ get_header(); ?>
 		
 		</div><!-- #about-grid --> 
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -780,26 +780,53 @@ object {
   margin: 10em 2em 2em 2em; }
 
 /* About  page */
+@media screen and (min-width: 1080px) {
+  .about-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 70vw;
+    height: 54vh;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 2rem; } }
+
 .site-main-about {
   padding-top: 5em; }
-  .site-main-about .entry-title {
-    display: none; }
-    @media screen and (min-width: 1080px) {
-      .site-main-about .entry-title {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; } }
-  .site-main-about h3 {
-    font-size: 1.875rem;
-    text-transform: none;
-    padding: 3rem 1.5rem; }
-  .site-main-about .site-title {
-    display: none; }
-    @media screen and (min-width: 1080px) {
-      .site-main-about .site-title {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; } }
+
+.entry-header {
+  display: none; }
+  @media screen and (min-width: 1080px) {
+    .entry-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
+  .entry-header h1 {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 3px; }
+  @media screen and (min-width: 1080px) {
+    .entry-header h2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 1.875rem;
+      text-transform: none;
+      font-family: "Poppins", sans-serif;
+      font-size: 50px;
+      margin-top: 0px;
+      font-weight: 100; } }
 
 .site-title-heading {
   font-family: "Poppins", sans-serif;
@@ -811,7 +838,6 @@ object {
   @media screen and (min-width: 650px) {
     .site-title-heading {
       width: 70vw;
-      margin: 0 auto;
       padding: 2em 0em 2em 0em; } }
   @media screen and (min-width: 1080px) {
     .site-title-heading {
@@ -830,7 +856,8 @@ object {
       height: 13.5em;
       text-align: center;
       padding: 1em 1em 1em 1em;
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      margin: 0px; }
       .site-title-heading p {
         padding: 1em 1.2em 1em 1.2em; } }
 
@@ -849,7 +876,7 @@ object {
   @media screen and (min-width: 1080px) {
     .about-grid {
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 16rem auto; } }
+      grid-template-rows: 16rem 28rem; } }
   .about-grid .image-1 {
     grid-column: 1 / 3;
     grid-row: 1 / 2; }
@@ -895,7 +922,7 @@ object {
       .about-grid .image-3 {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-        margin: 1rem 0rem 0rem 0rem; } }
+        margin: 0rem 0rem 0rem 0rem; } }
   .about-grid .image-1-red-box {
     grid-column: 2 / 3;
     grid-row: 3 / 5;
@@ -911,7 +938,7 @@ object {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         left: -15px;
-        top: 237px;
+        top: 253px;
         width: 9rem;
         height: 13rem; } }
   .about-grid .image-4 {
@@ -922,7 +949,7 @@ object {
       .about-grid .image-4 {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        margin: 1rem 0rem 0rem 0rem; } }
+        margin: 0rem 0rem 0rem 0rem; } }
   .about-grid .image-1-orange-box {
     grid-column: 1 / 3;
     grid-row: 5 / 6;

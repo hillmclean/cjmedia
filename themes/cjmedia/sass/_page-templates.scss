@@ -102,27 +102,48 @@
 
 /* About  page */
 
+.about-header {
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        height: 54vh;
+        margin: 0 auto;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+}
+
 .site-main-about {
     padding-top: 5em;
+}
 
-    .entry-title {
-        display: none;
+.entry-header {
+    display: none;
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    h1 {
+        font-family: $font__main;
+        text-transform: uppercase;
+        font-size: 35px;
+        margin-bottom: 3px;
+    }
+    h2 {
         @include desktop {
             display: flex;
-        }
-    }
-    h3 {
-     font-size: 1.875rem;   
-     text-transform: none;
-     padding: 3rem 1.5rem;
-    }
-    .site-title {
-        display: none;
-        @include desktop {
-            display: flex;
+            font-size: 1.875rem;   
+            text-transform: none;
+            font-family: $font__secondary;
+            font-size: 50px;
+            margin-top: 0px;
+            font-weight: 100;
         }
     }
 }
+
 
 .site-title-heading {
     font-family: $font__secondary;
@@ -133,7 +154,6 @@
     font-size: 2em;
     @include tablet {
         width: 70vw;
-        margin: 0 auto;
         padding: 2em 0em 2em 0em;
     }
     @include desktop {
@@ -147,6 +167,7 @@
         text-align: center;
         padding: 1em 1em 1em 1em; 
         font-size: 1.2em;
+        margin: 0px;
         p {
             padding: 1em 1.2em 1em 1.2em;
         }
@@ -167,7 +188,7 @@
     }
     @include desktop {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 16rem auto;
+        grid-template-rows: 16rem 28rem;
     }
 
     .image-1 {
@@ -224,7 +245,7 @@
         @include desktop {
             grid-column: 1 / 2;
             grid-row: 2 / 3; 
-            margin: 1rem 0rem 0rem 0rem;
+            margin: 0rem 0rem 0rem 0rem;
         }
     }
 
@@ -242,7 +263,7 @@
             grid-column: 1 / 2;
             grid-row: 2 / 3; 
             left: -15px;
-            top: 237px;
+            top: 253px;
             width: 9rem;
             height: 13rem;
         }
@@ -255,7 +276,7 @@
         @include desktop {
             grid-column: 2 / 3;
             grid-row: 2 / 3; 
-            margin: 1rem 0rem 0rem 0rem;
+            margin: 0rem 0rem 0rem 0rem;
         }
     }
 
