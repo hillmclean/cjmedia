@@ -778,7 +778,8 @@ object {
     .contact-header {
       margin-bottom: 5em;
       padding-top: 8em;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      height: 60vh; } }
   .contact-header h1 {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
@@ -810,7 +811,7 @@ object {
   @media screen and (min-width: 650px) {
     .contact-box {
       left: 300px;
-      top: 100px; } }
+      top: 130px; } }
 
 .wp-block-contact-form-7-contact-form-selector {
   margin-top: 3em; }
@@ -1069,6 +1070,9 @@ object {
   margin-top: 5em;
   margin-bottom: 3em;
   width: 70%; }
+  @media screen and (min-width: 650px) {
+    .showcase-header {
+      max-width: 20em; } }
 
 .showcase-title {
   text-align: center;
@@ -1131,11 +1135,13 @@ object {
       margin-right: 1rem; }
       .showcase-container:hover {
         -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        color: #DD7D74; } }
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); } }
 
 .cat-title {
-  padding: 2px 16px; }
+  padding: 0px;
+  margin-bottom: .5em;
+  margin-top: .5em;
+  font-weight: 200; }
 
 /* Taxonomy Pages */
 .showcase-tax-header {
@@ -1298,6 +1304,10 @@ object {
   /* bring your own prefixes */
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+
+.error-404 {
+  height: 50vw;
+  margin: 5em 2em 0em 2em; }
 
 .site-header {
   position: fixed;
