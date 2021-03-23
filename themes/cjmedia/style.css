@@ -807,7 +807,8 @@ object {
   height: 10em;
   position: absolute;
   left: 170px;
-  top: 180px; }
+  top: 180px;
+  z-index: -10; }
   @media screen and (min-width: 650px) {
     .contact-box {
       left: 300px;
@@ -859,7 +860,8 @@ object {
     font-weight: 200; }
   .site-main-contact .entry-content {
     max-width: 500px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    z-index: 99; }
 
 /* About  page */
 @media screen and (min-width: 1080px) {
@@ -1277,37 +1279,37 @@ object {
 
 /** LIGHTBOX MARKUP **/
 .lightbox {
-  /* Default to hidden */
   display: none;
-  /* Overlay entire screen */
   position: fixed;
   z-index: 999;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  /* A bit of padding around image */
   padding: 1em;
-  /* Translucent background */
   background: rgba(0, 0, 0, 0.8); }
 
-/* Unhide the lightbox when it's the target */
 .lightbox:target {
   display: block; }
 
 .lightbox iframe {
-  /* Full width and height */
   display: block;
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
 .error-404 {
-  height: 50vw;
-  margin: 5em 2em 0em 2em; }
+  height: 70vh;
+  margin: 10em 2em 0em 2em;
+  max-width: 70vw; }
+  @media screen and (min-width: 1080px) {
+    .error-404 {
+      height: 50vh; } }
+  .error-404 i {
+    color: #DD7D74;
+    font-size: 8em; }
 
 .site-header {
   position: fixed;

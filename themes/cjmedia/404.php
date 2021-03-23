@@ -18,7 +18,9 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Please send a message if you need help finding something.' ); ?></p>
+					<p><?php echo esc_html( 'It looks like nothing was found at this location. If you have any questions, please connect using one of the links below!' ); ?></p>
+
+					<a href="#colophon"><i class="fas fa-chevron-down"></i></a>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
